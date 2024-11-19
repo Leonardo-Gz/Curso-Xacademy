@@ -32,3 +32,47 @@ function frutasRepetidas(array1, array2) {
 };
 
 const resultado = console.log(frutasRepetidas(array1, array2));
+
+
+/* 3 Dado el siguiente objeto
+let carrito = {
+
+    total: 10,
+    productos: [
+        {
+            nombre: 'leche',
+            precio: 2,
+            unidades: 5
+        }
+    ]
+
+}
+
+completar la siguiente función para que agregue un nuevo producto al carrito y actualice su total
+function agregarProducto(nombre, precio, unidades) {
+
+Completar aca...
+
+} */
+
+    let carrito = {
+      total: 10,
+      productos: [
+          {
+              nombre: 'leche',
+              precio: 2,
+              unidades: 5
+          }
+      ]
+  }
+
+
+function agregarProducto(nombre, precio, unidades) {
+
+  const nuevoProducto = { nombre, precio, unidades };
+  carrito.productos.push(nuevoProducto);
+  carrito.total += precio * unidades;
+}
+
+agregarProducto('cafe', 1.2, 4);
+console.log(carrito);
