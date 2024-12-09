@@ -25,13 +25,14 @@ console.log(persona.[propiedadDinamica]);
 
 //FUNCION CONSTRUCTORA(this, new)
 function persona(nombre, edad, ciudad) {
-    this.nombre = nombre;
-    this.edad = edad;
-    this.ciudad = ciudad;
+  this.nombre = nombre;
+  this.edad = edad;
+  this.ciudad = ciudad;
 
-    this.presentar (); {
-        console.log(`Hola mi nombres es ${this.nombre} y tengo ${this.edad} años.`);
-    };
+  this.presentar();
+  {
+    console.log(`Hola mi nombres es ${this.nombre} y tengo ${this.edad} años.`);
+  }
 }
 
 const persona1 = new persona("Leonardo", 25, "Cordoba");
@@ -40,43 +41,41 @@ persona1.presentar();
 //CLASS
 
 class Persona {
-    educacion = ["priamria", "secuandaria", "terciaria"];
+  educacion = ["priamria", "secuandaria", "terciaria"];
 
-    constructor(nombre, edad, ciudad) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.ciudad = ciudad;
-    }
+  constructor(nombre, edad, ciudad) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.ciudad = ciudad;
+  }
 
-    saludar () {
-        console.log(`Hola mi nombres es ${this.nombre} y tengo ${this.edad} años.`)
-    };
+  saludar() {
+    console.log(`Hola mi nombres es ${this.nombre} y tengo ${this.edad} años.`);
+  }
 
-    mostrarEducacion() {
-        console.log(this.educacion);
-    };
-};
+  mostrarEducacion() {
+    console.log(this.educacion);
+  }
+}
 
 const persona2 = new Persona("Jairo", 26);
 persona2.saludar();
 persona2.mostrarEducacion();
 
 class Estudiante extends Persona {
-    constructor(nombre, edad, carrera) {
-        super(nombre, edad);
-        this.carrera = carrera;
-    }
+  constructor(nombre, edad, carrera) {
+    super(nombre, edad);
+    this.carrera = carrera;
+  }
 
-    estudiar() {
-        console.log(`Estoy estudian ${this.carrera}.`)
-    }
+  estudiar() {
+    console.log(`Estoy estudian ${this.carrera}.`);
+  }
 }
 
 let estudiante1 = new Estudiante("Leonardo", 25, "Programacion");
 estudiante1.saludar();
 estudiante1.estudiar();
-
-
 
 //Property Value Shorthand
 
@@ -84,11 +83,12 @@ let x = 10;
 let y = 20;
 
 const objet = {
-    x,
-    y,
-    sumar () {console.log(x + y)},
+  x,
+  y,
+  sumar() {
+    console.log(x + y);
+  },
 };
 
 console.log(objet);
 objet.sumar();
-

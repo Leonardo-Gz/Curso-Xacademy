@@ -5,7 +5,7 @@ edad = 25;
 console.log(edad);
 
 if (edad >= 18) {
-    console.log("Es mayor de edad");
+  console.log("Es mayor de edad");
 } else {
-    ("Es menor de edad");
-};
+  ("Es menor de edad");
+}

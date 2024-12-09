@@ -31,9 +31,8 @@ promesaComida
     .catch((error) => {
         console.log(error);
     });
-    .finally(() => {
-        console.log("El cliente se va del restaurante");
-    });
+//  .finally(() => {
+//    console.log("El cliente se va del restaurante");}); ERROR
 
 /* console.log("pido un plato de comida: " + "milanesas con pure");
 promesaComida.then((plato) => {
